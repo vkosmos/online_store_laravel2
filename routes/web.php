@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::get('/test', function () {
     echo "12341234";
 });
+
+
+Route::get('/new_test', function () {
+    echo "New Test";
+});
