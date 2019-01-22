@@ -16,10 +16,14 @@ Route::get('/', function () {
 });
 
 Route::get('/test', function () {
-    echo "12341234";
-});
+    //dd('1234');
 
+    $aaa = new \App\Goods();
+    $aaa->name = 'Синхрофазотрон';
+    $aaa->description = 'Глюконутый шизоидно-прекрасный с синим отливом безмятежности.';
+    $aaa->price = 125;
+    $aaa->category_id = 1;
+    $aaa->save();
+    dd($aaa);
 
-Route::get('/new_test', function () {
-    echo "New Test";
 });
