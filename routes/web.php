@@ -11,19 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Catalog@index');
+
+
+
 
 Route::get('/test', function () {
-    //dd('1234');
-
-    $aaa = new \App\Goods();
-    $aaa->name = 'Синхрофазотрон';
-    $aaa->description = 'Глюконутый шизоидно-прекрасный с синим отливом безмятежности.';
-    $aaa->price = 125;
-    $aaa->category_id = 1;
-    $aaa->save();
-    dd($aaa);
+    dd('1234');
 
 });
