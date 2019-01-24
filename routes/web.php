@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', 'Catalog@index');
+Route::get('/', 'Home');
 
+Route::get('/catalog', 'Catalog@index');
 
-
+Route::get('/catalog/{link}', 'Catalog@childs');
 
 Route::get('/actions/{id}', 'Actions');
 

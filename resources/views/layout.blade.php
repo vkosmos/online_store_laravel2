@@ -29,7 +29,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/">Каталог</a></li>
+                <li><a href="/catalog">Каталог</a></li>
                 <li class="dropdown">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown">Акции</a>
                     <ul class="dropdown-menu">
@@ -233,7 +233,7 @@
         <!-- right content column-->
         <div class="col-md-10" id="content">
             <div class="panel">
-                <div class="panel-heading" style="background-color:#111;color:#fff;">Текущий путь</div>
+                <div class="panel-heading" style="background-color:#111;color:#fff;">@yield('bread_crumbs')</div>
                 <div class="panel-body">
                     <div class="row">
                     </div>
