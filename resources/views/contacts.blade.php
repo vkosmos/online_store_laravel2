@@ -2,11 +2,12 @@
 
 
 @section('title')
-    Каталог
+    Контаксты
 @endsection
 
 
 @section('categories')
+
 
     @foreach($categories as $cat)
 
@@ -31,10 +32,20 @@
 
     @endforeach
 
+
 @endsection
 
 @section('content')
 
-    <h1>Главная страница каталога</h1>
+    <h1>Как с нами связаться</h1>
+
+    <ul>
+        <li>
+            Телефон: +7 (999) 123456
+        </li>
+        <li>
+            e-mail: test@test.ru
+        </li>
+    </ul>
 
 @endsection

@@ -16,7 +16,10 @@ Route::get('/', 'Catalog@index');
 
 
 
-Route::get('/test', function () {
-    dd('1234');
+Route::get('/actions/{id}', 'Actions');
 
+Route::get('/contacts', 'Contacts');
+
+Route::get('user/{id}', function ($id) {
+    dd( 'User '.$id );
 });

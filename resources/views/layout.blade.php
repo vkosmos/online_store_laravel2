@@ -22,27 +22,24 @@
 <nav class="navbar navbar-static">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="http://www.bootply.com" target="ext"><b>Bootply</b></a>
+            <a class="navbar-brand" href="/"> <!--target="ext"--><b>Laravel store</b></a>
             <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="glyphicon glyphicon-chevron-down"></span>
             </a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li><a href="/">Каталог</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Channels</a>
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Акции</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Sub-link</a></li>
-                        <li><a href="#">Sub-link</a></li>
-                        <li><a href="#">Sub-link</a></li>
-                        <li><a href="#">Sub-link</a></li>
-
+                        <li><a href="/actions/1">Новый перфоратор за ваше авто</a></li>
+                        <li><a href="/actions/2">Клетка для попугая в подарок</a></li>
                     </ul>
                 </li>
+                <li><a href="/contacts">Контакты</a></li>
             </ul>
-            <ul class="nav navbar-right navbar-nav">
+            <!--ul class="nav navbar-right navbar-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
                     <ul class="dropdown-menu" style="padding:12px;">
@@ -60,23 +57,23 @@
                         <li><a href="#">About</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul-->
         </div>
     </div>
 </nav><!-- /.navbar -->
 
-<header class="masthead">
+<header style="min-height: 110px">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1><a href="#" title="Scroll down for your viewing pleasure">Bootable Template</a>
-                    <p class="lead">3-column Theme + Layout for Bootstrap 3.</p></h1>
+                <h1><a href="#" title="Scroll down for your viewing pleasure">Поиск</a>
+                    <p class="lead">Потом сюда приделаю поиск</p></h1>
             </div>
-            <div class="col-md-6">
+            <!--div class="col-md-6">
                 <div class="well pull-right">
                     <img src="//placehold.it/280x100/E7E7E7">
                 </div>
-            </div>
+            </div-->
         </div>
     </div>
 </header>
@@ -87,58 +84,76 @@
         <!-- left side column -->
         <div class="col-md-2">
             <div class="panel panel-default" id="sidebar">
-                <div class="panel-heading" style="background-color:#888;color:#fff;">Sidebar</div>
+                <div class="panel-heading" style="background-color:#888;color:#fff;">Товары</div>
                 <div class="panel-body">
-                    <ul class="nav nav-stacked">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
+                    <!--ul class="nav nav-stacked">
+                        <li><a href="#">Категория 1</a></li>
+                        <li><a href="#">Категория 2</a></li>
+                        <li><a href="#">Категория 3</a></li>
+                    </ul-->
+
                     <div class="accordion" id="accordion2">
-                        <div class="accordion-group">
+
+                        @yield('categories')
+
+                        <!--div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                    Accordion
+                                    Категория 1
                                 </a>
                             </div>
                             <div id="collapseOne" class="accordion-body collapse in">
                                 <div class="accordion-inner">
-                                    Content here for links, ads, etc..
+                                    Подкатегория 1
+                                </div>
+                                <div class="accordion-inner">
+                                    Подкатегория 2
+                                </div>
+                                <div class="accordion-inner">
+                                    Подкатегория 3
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                    Accordion
+                                    Категория 2
                                 </a>
                             </div>
-                            <div id="collapseTwo" class="accordion-body collapse">
+                            <div id="collapseTwo" class="accordion-body collapse in"><!-- Для скрытия in убрать ->
                                 <div class="accordion-inner">
-                                    Another collapse panel. Content here for links, ads, etc..
+                                    Подкатегория 4
+                                </div>
+                                <div class="accordion-inner">
+                                    Подкатегория 5
+                                </div>
+                                <div class="accordion-inner">
+                                    Подкатегория 6
+                                </div>
+                                <div class="accordion-inner">
+                                    Подкатегория 7
                                 </div>
                             </div>
-                        </div>
+                        </div-->
+
                     </div><!--/acc-->
 
-                    <hr>
+                    <!--hr>
 
                     <div class="col col-span-12">
                         <i class="icon-2x icon-facebook"></i>&nbsp;
                         <i class="icon-2x icon-twitter"></i>&nbsp;
                         <i class="icon-2x icon-linkedin"></i>&nbsp;
                         <i class="icon-2x icon-pinterest"></i>
-                    </div>
+                    </div-->
 
                 </div><!--/panel body-->
             </div><!--/panel-->
         </div><!--/end left column-->
 
         <!--mid column-->
-        <div class="col-md-3">
+        <!--div-- class="col-md-3">
             <div class="panel" id="midCol">
                 <div class="panel-heading" style="background-color:#555;color:#eee;">New Stories</div>
                 <div class="panel-body">
@@ -212,16 +227,22 @@
                     </div>
 
                 </div>
-            </div><!--/panel-->
-        </div><!--/end mid column-->
+            </div>
+        </div--><!--/end mid column-->
 
         <!-- right content column-->
-        <div class="col-md-7" id="content">
+        <div class="col-md-10" id="content">
             <div class="panel">
-                <div class="panel-heading" style="background-color:#111;color:#fff;">Top Stories</div>
+                <div class="panel-heading" style="background-color:#111;color:#fff;">Текущий путь</div>
                 <div class="panel-body">
-
                     <div class="row">
+                    </div>
+
+                    @yield('content')
+
+
+
+                    <!--div class="row">
                         <div class="col-md-8">
                             <h2>The Year of Responsive Design.</h2>
                             2013 was marked as the year of Responsive Web Design (RWD). The Web is filled with big brands, galleries and magical examples that media queries demonstrate the glory of responsive design.
@@ -243,7 +264,7 @@
                         </div>
                     </div>
 
-                    <hr>
+                    <!--hr>
 
                     "Mobile first" and "unobtrusive JavaScript" (AKA: "progressive enhancement") are strategies for when a new site design is being considered. These are related concepts that predated RWD: browsers of basic mobile phones do not understand JavaScript or media queries, so the recommended practice is to create a basic web site then enhance it for smart phones and PCs—rather than try "graceful degradation" to make a complex, image-heavy site work on the most basic mobile phones.
                     <br><br>
@@ -352,9 +373,9 @@
                     <hr>
                     <h4><a href="http://bootply.com/69913">Edit on Bootply</a></h4>
                     <hr>
-
-                </div><!--/panel-body-->
-            </div><!--/panel-->
+                </div>
+            </div><!--/panel-body-->
+            <!--/panel-->
             <!--/end right column-->
         </div>
     </div>
@@ -362,7 +383,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-right"><h5>©Company 2014</h5></div>
+            <div class="col-md-12 text-right"><h5>©Laravel online store</h5></div>
         </div>
     </div>
 </footer>
